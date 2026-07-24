@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import type { Session } from "@supabase/supabase-js";
 import { StartScreen } from "./components/StartScreen";
 import { ModeScreen, QuizMode } from "./components/ModeScreen";
 import {
@@ -10,6 +11,9 @@ import { QuizScreen, Question } from "./components/QuizScreen";
 import { ResultScreen } from "./components/ResultScreen";
 import { DuaReward, Dua } from "./components/DuaReward";
 import { CongratsScreen } from "./components/CongratsScreen";
+import { AuthScreen } from "./components/AuthScreen";
+import { LeaderboardScreen } from "./components/LeaderboardScreen";
+import { supabase } from "../lib/supabase";
 
 // Categorias disponíveis
 const categories: Category[] = [
@@ -2008,6 +2012,7 @@ const duas: Dua[] = [
 ];
 
 type Screen =
+  | "auth"
   | "start"
   | "mode"
   | "category"
@@ -2015,7 +2020,8 @@ type Screen =
   | "quiz"
   | "result"
   | "congrats"
-  | "dua";
+  | "dua"
+  | "leaderboard";
 
 // Tipo para rastrear o progresso
 interface Progress {
@@ -2026,7 +2032,7 @@ interface Progress {
 
 export default function App() {
   const [currentScreen, setCurrentScreen] =
-    useState<Screen>("start");
+    useState<Screen>("auth");
   const [selectedCategory, setSelectedCategory] = useState<
     string | null
   >(null);
@@ -2036,41 +2042,133 @@ export default function App() {
   const [finalScore, setFinalScore] = useState(0);
   const [quizMode, setQuizMode] = useState<QuizMode>("normal");
   const [progress, setProgress] = useState<Progress>({});
+  const [session, setSession] = useState<Session | null>(null);
+  const [username, setUsername] = useState<string | null>(null);
+  const [authChecked, setAuthChecked] = useState(false);
+  const [isGuest, setIsGuest] = useState(false);
 
-  // Carregar progresso do localStorage ao iniciar
-  useEffect(() => {
-    const savedProgress = localStorage.getItem(
-      "islamQuizProgress",
-    );
+  // Entrar como convidado: usa progresso guardado só neste dispositivo
+  const handleGuest = () => {
+    setIsGuest(true);
+    setUsername(null);
+
+    const savedProgress = localStorage.getItem("islamQuizProgress");
     if (savedProgress) {
       try {
         setProgress(JSON.parse(savedProgress));
+        setCurrentScreen("start");
+        return;
       } catch (e) {
         console.error("Error loading progress:", e);
       }
-    } else {
-      // Inicializar com todos os níveis 1 desbloqueados
-      const initialProgress: Progress = {};
-      categories.forEach((cat) => {
-        initialProgress[cat.id] = { unlockedLevels: [1] };
-      });
-      setProgress(initialProgress);
-      localStorage.setItem(
-        "islamQuizProgress",
-        JSON.stringify(initialProgress),
-      );
     }
+
+    const initialProgress: Progress = {};
+    categories.forEach((cat) => {
+      initialProgress[cat.id] = { unlockedLevels: [1] };
+    });
+    setProgress(initialProgress);
+    localStorage.setItem(
+      "islamQuizProgress",
+      JSON.stringify(initialProgress),
+    );
+    setCurrentScreen("start");
+  };
+
+  // Verificar sessão existente ao iniciar e ouvir mudanças de login/logout
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setAuthChecked(true);
+      if (session) setCurrentScreen("start");
+    });
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+      if (session) {
+        setCurrentScreen("start");
+      } else {
+        setCurrentScreen("auth");
+        setUsername(null);
+        setProgress({});
+      }
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
-  // Salvar progresso no localStorage quando mudar
+  // Carregar perfil (username) e progresso da nuvem quando a sessão muda
   useEffect(() => {
-    if (Object.keys(progress).length > 0) {
-      localStorage.setItem(
-        "islamQuizProgress",
-        JSON.stringify(progress),
-      );
+    if (!session) return;
+
+    const loadUserData = async () => {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("username")
+        .eq("id", session.user.id)
+        .single();
+
+      if (profile) setUsername(profile.username);
+
+      const { data: progressRows } = await supabase
+        .from("user_progress")
+        .select("category_id, unlocked_levels")
+        .eq("user_id", session.user.id);
+
+      const loadedProgress: Progress = {};
+      categories.forEach((cat) => {
+        loadedProgress[cat.id] = { unlockedLevels: [1] };
+      });
+      (progressRows ?? []).forEach((row) => {
+        loadedProgress[row.category_id] = {
+          unlockedLevels: row.unlocked_levels as Level[],
+        };
+      });
+      setProgress(loadedProgress);
+    };
+
+    loadUserData();
+  }, [session]);
+
+  // Guardar o progresso de uma categoria na nuvem (upsert) ou localmente (convidado)
+  const persistProgress = async (
+    categoryId: string,
+    unlockedLevels: Level[],
+  ) => {
+    if (isGuest) {
+      setProgress((prev) => {
+        const updated = {
+          ...prev,
+          [categoryId]: { unlockedLevels },
+        };
+        localStorage.setItem(
+          "islamQuizProgress",
+          JSON.stringify(updated),
+        );
+        return prev; // já atualizado pelo caller principal
+      });
+      return;
     }
-  }, [progress]);
+    if (!session) return;
+    await supabase.from("user_progress").upsert({
+      user_id: session.user.id,
+      category_id: categoryId,
+      unlocked_levels: unlockedLevels,
+      updated_at: new Date().toISOString(),
+    });
+  };
+
+  const handleLogout = async () => {
+    if (isGuest) {
+      setIsGuest(false);
+      setProgress({});
+      setCurrentScreen("auth");
+      return;
+    }
+    await supabase.auth.signOut();
+  };
 
   const handleStart = () => {
     setCurrentScreen("mode");
@@ -2098,6 +2196,17 @@ export default function App() {
     const totalQuestions = currentQuestions.length;
     const passPercentage = (score / totalQuestions) * 100;
 
+    // Registar a tentativa na nuvem (alimenta o ranking automaticamente)
+    if (session && selectedCategory && selectedLevel) {
+      supabase.from("quiz_attempts").insert({
+        user_id: session.user.id,
+        category_id: selectedCategory,
+        level: parseInt(selectedLevel),
+        score,
+        total: totalQuestions,
+      });
+    }
+
     if (passPercentage >= 60) {
       setCurrentScreen("congrats");
     } else {
@@ -2123,6 +2232,7 @@ export default function App() {
         if (!unlockedLevels.includes(nextLevel)) {
           unlockedLevels.push(nextLevel);
         }
+        persistProgress(selectedCategory, unlockedLevels);
         return {
           ...prev,
           [selectedCategory]: { unlockedLevels },
@@ -2214,10 +2324,37 @@ export default function App() {
   const randomDua =
     duas[Math.floor(Math.random() * duas.length)];
 
+  if (!authChecked) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-white flex items-center justify-center">
+        <div className="w-10 h-10 border-4 border-emerald-600 border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
   return (
     <div className="size-full">
+      {currentScreen === "auth" && (
+        <AuthScreen
+          onAuthenticated={() => setCurrentScreen("start")}
+          onGuest={handleGuest}
+        />
+      )}
       {currentScreen === "start" && (
-        <StartScreen onStart={handleStart} />
+        <StartScreen
+          onStart={handleStart}
+          onShowLeaderboard={
+            isGuest ? undefined : () => setCurrentScreen("leaderboard")
+          }
+          onLogout={handleLogout}
+          username={isGuest ? "Convidado" : username}
+        />
+      )}
+      {currentScreen === "leaderboard" && (
+        <LeaderboardScreen
+          currentUsername={username}
+          onBack={() => setCurrentScreen("start")}
+        />
       )}
       {currentScreen === "mode" && (
         <ModeScreen
