@@ -22,9 +22,48 @@ export function QuizScreen({ questions, onComplete, mode = "normal" }: QuizScree
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [showFeedback, setShowFeedback] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(30);
   const [lives, setLives] = useState(3);
   const [isLosingLife, setIsLosingLife] = useState(false);
+
+  // Toca um tom simples usando a Web Audio API (reutilizado pelos vários efeitos sonoros)
+  const playTone = (
+    frequency: number,
+    duration: number,
+    type: OscillatorType = "sine",
+    volume = 0.3,
+  ) => {
+    try {
+      const audioContext = new (window.AudioContext ||
+        (window as any).webkitAudioContext)();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+
+      oscillator.frequency.value = frequency;
+      oscillator.type = type;
+
+      gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(
+        0.01,
+        audioContext.currentTime + duration,
+      );
+
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + duration);
+    } catch (e) {
+      console.log("Audio not supported");
+    }
+  };
+
+  // Som de alegria (acorde ascendente) ao acertar uma resposta
+  const playSuccessSound = () => {
+    playTone(523.25, 0.15, "sine", 0.25); // Dó (C5)
+    setTimeout(() => playTone(659.25, 0.15, "sine", 0.25), 100); // Mi (E5)
+    setTimeout(() => playTone(783.99, 0.25, "sine", 0.25), 200); // Sol (G5)
+  };
 
   // Verificar se há perguntas disponíveis
   if (!questions || questions.length === 0) {
@@ -51,6 +90,10 @@ export function QuizScreen({ questions, onComplete, mode = "normal" }: QuizScree
     if (!isTimed || showFeedback) return;
 
     if (timeLeft > 0) {
+      // Bipe de alerta a cada segundo nos últimos 5 segundos
+      if (timeLeft <= 5) {
+        playTone(880, 0.15, "square", 0.2);
+      }
       const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
       return () => clearTimeout(timer);
     } else {
@@ -61,7 +104,7 @@ export function QuizScreen({ questions, onComplete, mode = "normal" }: QuizScree
 
   // Resetar timer ao mudar de pergunta
   useEffect(() => {
-    setTimeLeft(10);
+    setTimeLeft(30);
   }, [currentQuestionIndex]);
 
   const handleAnswerSelect = (optionIndex: number) => {
@@ -79,6 +122,7 @@ export function QuizScreen({ questions, onComplete, mode = "normal" }: QuizScree
     
     if (isCorrect) {
       setScore(score + 1);
+      playSuccessSound();
     } else {
       // Perdeu uma vida!
       const newLives = lives - 1;
@@ -94,25 +138,7 @@ export function QuizScreen({ questions, onComplete, mode = "normal" }: QuizScree
       }
       
       // Som de erro (beep)
-      try {
-        const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-        const oscillator = audioContext.createOscillator();
-        const gainNode = audioContext.createGain();
-        
-        oscillator.connect(gainNode);
-        gainNode.connect(audioContext.destination);
-        
-        oscillator.frequency.value = 200; // Frequência baixa para som de erro
-        oscillator.type = 'sawtooth';
-        
-        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
-        
-        oscillator.start(audioContext.currentTime);
-        oscillator.stop(audioContext.currentTime + 0.3);
-      } catch (e) {
-        console.log("Audio not supported");
-      }
+      playTone(200, 0.3, "sawtooth", 0.3);
       
       // Se lives chegou a 0, terminar o jogo
       if (newLives === 0) {

@@ -183,7 +183,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Os muçulmanos realizam 5 orações obrigatórias diariamente: Fajr, Dhuhr, Asr, Maghrib e Isha. O Profeta (paz esteja com ele) disse: 'As cinco orações diárias e a oração de sexta-feira até a próxima sexta-feira expiam os pecados cometidos entre elas, desde que os pecados graves sejam evitados' (Sahih Muslim 233).",
+        "Os muçulmanos realizam 5 orações obrigatórias diariamente: Fajr, Dhuhr, Asr, Maghrib e Isha. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'As cinco orações diárias e a oração de sexta-feira até a próxima sexta-feira expiam os pecados cometidos entre elas, desde que os pecados graves sejam evitados' (Sahih Muslim 233).",
     },
     {
       id: 7,
@@ -246,7 +246,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 0,
       explanation:
-        "A oração de Tahajjud (oração noturna) é a melhor oração voluntária. O Profeta (paz esteja com ele) disse: 'A melhor oração depois das orações obrigatórias é a oração na profundidade da noite' (Sahih Muslim 1163). Allah elogia no Alcorão: 'Eles costumavam dormir pouco da noite' (Alcorão 51:17).",
+        "A oração de Tahajjud (oração noturna) é a melhor oração voluntária. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'A melhor oração depois das orações obrigatórias é a oração na profundidade da noite' (Sahih Muslim 1163). Allah elogia no Alcorão: 'Eles costumavam dormir pouco da noite' (Alcorão 51:17).",
     },
     {
       id: 12,
@@ -259,7 +259,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 2,
       explanation:
-        "Quem não possui riqueza acima do nisab (limite mínimo, equivalente a 85g de ouro) está isento do Zakat. O Profeta (paz esteja com ele) disse: 'Não há Zakat sobre uma propriedade até que tenha passado um ano' (Sunan Ibn Majah 1792). O Islam não sobrecarrega ninguém além de sua capacidade.",
+        "Quem não possui riqueza acima do nisab (limite mínimo, equivalente a 85g de ouro) está isento do Zakat. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Não há Zakat sobre uma propriedade até que tenha passado um ano' (Sunan Ibn Majah 1792). O Islam não sobrecarrega ninguém além de sua capacidade.",
     },
     {
       id: 13,
@@ -295,7 +295,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 3,
       explanation:
-        "Zakat é caridade obrigatória com valores específicos, enquanto Swadaqah é caridade voluntária de qualquer valor e forma. O Profeta (paz esteja com ele) disse: 'Até um sorriso no rosto do seu irmão é Swadaqah' (Tirmidhi 1956). Allah ama os generosos: 'Aqueles que gastam sua riqueza de noite e de dia, em segredo e em público' (Alcorão 2:274).",
+        "Zakat é caridade obrigatória com valores específicos, enquanto Swadaqah é caridade voluntária de qualquer valor e forma. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Até um sorriso no rosto do seu irmão é Swadaqah' (Tirmidhi 1956). Allah ama os generosos: 'Aqueles que gastam sua riqueza de noite e de dia, em segredo e em público' (Alcorão 2:274).",
     },
   ],
   profetas: [
@@ -489,7 +489,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Ramadã é o nono mês do calendário islâmico e o mês do jejum obrigatório. Allah revelou: 'O mês de Ramadã em que foi revelado o Alcorão, uma orientação para a humanidade' (Alcorão 2:185). Foi neste mês abençoado que o Alcorão começou a ser revelado ao Profeta Muhammad (paz esteja com ele).",
+        "Ramadã é o nono mês do calendário islâmico e o mês do jejum obrigatório. Allah revelou: 'O mês de Ramadã em que foi revelado o Alcorão, uma orientação para a humanidade' (Alcorão 2:185). Foi neste mês abençoado que o Alcorão começou a ser revelado ao Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele).",
     },
     {
       id: 13,
@@ -528,7 +528,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "'As-Salamu Alaikum' significa 'A paz esteja com você'. O Profeta Muhammad (paz esteja com ele) disse: 'Vocês não entrarão no Paraíso até que acreditem, e não acreditarão até que se amem. Devo informá-los de algo que, se fizerem, se amarão? Espalhem a saudação de paz entre vocês' (Sahih Muslim 54). Esta saudação promove paz e fraternidade.",
+        "'As-Salamu Alaikum' significa 'A paz esteja com você'. O Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) disse: 'Vocês não entrarão no Paraíso até que acreditem, e não acreditarão até que se amem. Devo informá-los de algo que, se fizerem, se amarão? Espalhem a saudação de paz entre vocês' (Sahih Muslim 54). Esta saudação promove paz e fraternidade.",
     },
     // NÍVEL 2 - INTERMEDIÁRIO (Perguntas 16-20)
     {
@@ -543,7 +543,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Deve-se usar a mão direita para comer e beber. O Profeta (paz esteja com ele) disse: 'Quando um de vocês comer, que coma com a mão direita, e quando beber, que beba com a mão direita, pois Satanás come com a mão esquerda e bebe com a mão esquerda' (Sahih Muslim 2020). A mão direita também é usada para coisas limpas e honradas.",
+        "Deve-se usar a mão direita para comer e beber. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Quando um de vocês comer, que coma com a mão direita, e quando beber, que beba com a mão direita, pois Satanás come com a mão esquerda e bebe com a mão esquerda' (Sahih Muslim 2020). A mão direita também é usada para coisas limpas e honradas.",
     },
     {
       id: 17,
@@ -557,7 +557,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "'Bismillah' (Em nome de Allah) deve ser dito antes de comer, beber ou iniciar qualquer ação boa. O Profeta (paz esteja com ele) disse: 'Quando um de vocês comer, que mencione o nome de Allah. Se esquecer de mencionar o nome de Allah no início, que diga: Bismillah no início e no fim' (Sunan Abu Dawud 3767). Começar com Bismillah traz bênção (barakah).",
+        "'Bismillah' (Em nome de Allah) deve ser dito antes de comer, beber ou iniciar qualquer ação boa. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Quando um de vocês comer, que mencione o nome de Allah. Se esquecer de mencionar o nome de Allah no início, que diga: Bismillah no início e no fim' (Sunan Abu Dawud 3767). Começar com Bismillah traz bênção (barakah).",
     },
     {
       id: 18,
@@ -566,7 +566,7 @@ const questionsByCategory: Record<string, Question[]> = {
       options: ["Miskin", "Miswak", "Miraj", "Misbaha"],
       correctAnswer: 1,
       explanation:
-        "Miswak (ou Siwak) é um ramo de árvore Arak usado para limpar os dentes. O Profeta (paz esteja com ele) disse: 'Se não fosse dificultar minha comunidade, teria ordenado o Miswak com cada ablução' (Sahih al-Bukhari 887). Também disse: 'O Miswak purifica a boca e agrada ao Senhor' (Sunan an-Nasa'i 5). Tem benefícios científicos comprovados para saúde oral.",
+        "Miswak (ou Siwak) é um ramo de árvore Arak usado para limpar os dentes. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Se não fosse dificultar minha comunidade, teria ordenado o Miswak com cada ablução' (Sahih al-Bukhari 887). Também disse: 'O Miswak purifica a boca e agrada ao Senhor' (Sunan an-Nasa'i 5). Tem benefícios científicos comprovados para saúde oral.",
     },
     {
       id: 19,
@@ -593,7 +593,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Ao espirrar, deve-se dizer 'Alhamdulillah' (Louvado seja Allah). O Profeta (paz esteja com ele) disse: 'Quando um de vocês espirrar, que diga Alhamdulillah, e que seu irmão ou companheiro responda Yarhamukallah (Que Allah tenha misericórdia de você), e quando lhe disserem Yarhamukallah, que responda Yahdikumullah (Que Allah os guie)' (Sahih al-Bukhari 6224).",
+        "Ao espirrar, deve-se dizer 'Alhamdulillah' (Louvado seja Allah). O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Quando um de vocês espirrar, que diga Alhamdulillah, e que seu irmão ou companheiro responda Yarhamukallah (Que Allah tenha misericórdia de você), e quando lhe disserem Yarhamukallah, que responda Yahdikumullah (Que Allah os guie)' (Sahih al-Bukhari 6224).",
     },
     // NÍVEL 3 - AVANÇADO (Perguntas 21-25)
     {
@@ -608,7 +608,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Adab significa etiqueta, boas maneiras e comportamento refinado. Engloba como falar, comer, caminhar, tratar outros e conduzir-se em todas as situações. O Profeta (paz esteja com ele) disse: 'Meu Senhor me educou e aperfeiçoou minha educação (Adab)' (Al-Jami' as-Saghir). O Islam enfatiza Adab em todas as áreas: com Allah, pessoas, animais e ambiente. Bom Adab reflete a fé interior.",
+        "Adab significa etiqueta, boas maneiras e comportamento refinado. Engloba como falar, comer, caminhar, tratar outros e conduzir-se em todas as situações. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Meu Senhor me educou e aperfeiçoou minha educação (Adab)' (Al-Jami' as-Saghir). O Islam enfatiza Adab em todas as áreas: com Allah, pessoas, animais e ambiente. Bom Adab reflete a fé interior.",
     },
     {
       id: 22,
@@ -622,7 +622,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 3,
       explanation:
-        "Remover obstáculos do caminho tem grande recompensa. O Profeta (paz esteja com ele) disse: 'Vi um homem desfrutando no Paraíso por causa de uma árvore que cortou que estava prejudicando os muçulmanos' (Sahih Muslim 1914). Também disse: 'A fé tem mais de setenta ramos... e remover obstáculos do caminho é um ramo da fé' (Sahih Muslim 35). É Sadaqah que traz bênçãos.",
+        "Remover obstáculos do caminho tem grande recompensa. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Vi um homem desfrutando no Paraíso por causa de uma árvore que cortou que estava prejudicando os muçulmanos' (Sahih Muslim 1914). Também disse: 'A fé tem mais de setenta ramos... e remover obstáculos do caminho é um ramo da fé' (Sahih Muslim 35). É Sadaqah que traz bênçãos.",
     },
     {
       id: 23,
@@ -631,7 +631,7 @@ const questionsByCategory: Record<string, Question[]> = {
       options: ["Duha", "Ishraq", "Tahajjud", "Tarawih"],
       correctAnswer: 2,
       explanation:
-        "Tahajjud é a oração voluntária na última terça parte da noite. O Profeta (paz esteja com ele) disse: 'Nosso Senhor desce ao céu mais baixo toda noite no último terço e diz: Quem Me invoca para que Eu responda? Quem Me pede para que Eu dê? Quem busca Meu perdão para que Eu perdoe?' (Sahih al-Bukhari 1145). Allah elogia: 'Eles se levantam de suas camas' (Alcorão 32:16).",
+        "Tahajjud é a oração voluntária na última terça parte da noite. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Nosso Senhor desce ao céu mais baixo toda noite no último terço e diz: Quem Me invoca para que Eu responda? Quem Me pede para que Eu dê? Quem busca Meu perdão para que Eu perdoe?' (Sahih al-Bukhari 1145). Allah elogia: 'Eles se levantam de suas camas' (Alcorão 32:16).",
     },
     {
       id: 24,
@@ -645,7 +645,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Istinja é a limpeza completa após usar o banheiro. O Profeta (paz esteja com ele) ensinou usar água ou pedras limpas (hoje lenços). Allah ama os que se purificam: 'Certamente Allah ama os que se arrependem e ama os que se purificam' (Alcorão 2:222). Deve-se usar a mão esquerda, entrar com o pé esquerdo, fazer dua específica e garantir limpeza completa antes do Wudu.",
+        "Istinja é a limpeza completa após usar o banheiro. O Profeta que a paz e bênçãos de Allah estejam sobre ele) ensinou usar água ou pedras limpas (hoje lenços). Allah ama os que se purificam: 'Certamente Allah ama os que se arrependem e ama os que se purificam' (Alcorão 2:222). Deve-se usar a mão esquerda, entrar com o pé esquerdo, fazer dua específica e garantir limpeza completa antes do Wudu.",
     },
     {
       id: 25,
@@ -670,7 +670,7 @@ const questionsByCategory: Record<string, Question[]> = {
       options: ["Medina", "Jerusalém", "Meca", "Cairo"],
       correctAnswer: 2,
       explanation:
-        "Meca é a cidade mais sagrada do Islam, onde está localizada a Kaaba. O Profeta Muhammad (paz esteja com ele) disse: 'Uma oração na Mesquita Sagrada [Meca] é melhor do que cem mil orações em qualquer outra mesquita' (Sahih Ibn Majah 1406). É o local de nascimento do Profeta e o destino do Hajj.",
+        "Meca é a cidade mais sagrada do Islam, onde está localizada a Kaaba. O Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) disse: 'Uma oração na Mesquita Sagrada [Meca] é melhor do que cem mil orações em qualquer outra mesquita' (Sahih Ibn Majah 1406). É o local de nascimento do Profeta e o destino do Hajj.",
     },
     {
       id: 17,
@@ -678,7 +678,7 @@ const questionsByCategory: Record<string, Question[]> = {
       options: ["A Bíblia", "O Alcorão", "A Torá", "O Vedas"],
       correctAnswer: 1,
       explanation:
-        "O Alcorão é o livro sagrado do Islam, a palavra literal de Allah revelada ao Profeta Muhammad (paz esteja com ele) por meio do Anjo Gabriel. Allah diz: 'Certamente Nós revelamos a Mensagem, e certamente Nós seremos seus guardiões' (Alcorão 15:9). É preservado em sua forma original há mais de 1400 anos.",
+        "O Alcorão é o livro sagrado do Islam, a palavra literal de Allah revelada ao Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) por meio do Anjo Gabriel. Allah diz: 'Certamente Nós revelamos a Mensagem, e certamente Nós seremos seus guardiões' (Alcorão 15:9). É preservado em sua forma original há mais de 1400 anos.",
     },
     {
       id: 18,
@@ -713,7 +713,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "A mesquita (Masjid em árabe, que significa 'lugar de prostração') é o local de adoração dos muçulmanos. O Profeta Muhammad (paz esteja com ele) disse: 'As mesquitas são as casas de Allah na terra, e é direito do Hóspede honrar o convidado' (Al-Bayhaqi). As mesquitas servem como centros comunitários para oração, estudo e reuniões sociais.",
+        "A mesquita (Masjid em árabe, que significa 'lugar de prostração') é o local de adoração dos muçulmanos. O Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) disse: 'As mesquitas são as casas de Allah na terra, e é direito do Hóspede honrar o convidado' (Al-Bayhaqi). As mesquitas servem como centros comunitários para oração, estudo e reuniões sociais.",
     },
     // NÍVEL 2 - INTERMEDIÁRIO (Perguntas 21-25)
     {
@@ -770,7 +770,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Eid al-Fitr (Festival da Quebra do Jejum) celebra o fim do Ramadã no 1º dia de Shawwal. O Profeta (paz esteja com ele) estabeleceu este dia de alegria e agradecimento. Muçulmanos realizam oração especial pela manhã, dão Zakat al-Fitr (caridade obrigatória), vestem roupas novas, visitam familiares, perdoam-se mutuamente e compartilham refeições festivas. É proibido jejuar neste dia.",
+        "Eid al-Fitr (Festival da Quebra do Jejum) celebra o fim do Ramadã no 1º dia de Shawwal. O Profeta que a paz e bênçãos de Allah estejam sobre ele) estabeleceu este dia de alegria e agradecimento. Muçulmanos realizam oração especial pela manhã, dão Zakat al-Fitr (caridade obrigatória), vestem roupas novas, visitam familiares, perdoam-se mutuamente e compartilham refeições festivas. É proibido jejuar neste dia.",
     },
     {
       id: 25,
@@ -861,7 +861,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 1,
       question:
-        "Em que ano nasceu o Profeta Muhammad (paz esteja com ele)?",
+        "Em que ano nasceu o Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) 570 d.C. (Ano do Elefante)",
         "B) 600 d.C.",
@@ -870,12 +870,12 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 0,
       explanation:
-        "O Profeta Muhammad (paz esteja com ele) nasceu em 570 d.C., no ano conhecido como 'Ano do Elefante', quando Abraha tentou destruir a Kaaba com um exército que incluía elefantes. Allah protegeu a Kaaba enviando pássaros (Ababil) que jogaram pedras de argila ardente. Allah menciona este evento: 'Não viste como teu Senhor tratou os companheiros do Elefante?' (Alcorão 105:1). Ibn Ishaq e outros historiadores confirmam esta data.",
+        "O Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) nasceu em 570 d.C., no ano conhecido como 'Ano do Elefante', quando Abraha tentou destruir a Kaaba com um exército que incluía elefantes. Allah protegeu a Kaaba enviando pássaros (Ababil) que jogaram pedras de argila ardente. Allah menciona este evento: 'Não viste como teu Senhor tratou os companheiros do Elefante?' (Alcorão 105:1). Ibn Ishaq e outros historiadores confirmam esta data.",
     },
     {
       id: 2,
       question:
-        "Qual era o nome da mãe do Profeta Muhammad (paz esteja com ele)?",
+        "Qual era o nome da mãe do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Khadija",
         "B) Aminah",
@@ -884,12 +884,12 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Aminah bint Wahb foi a mãe do Profeta Muhammad (paz esteja com ele). Ela faleceu quando ele tinha apenas 6 anos de idade, em Al-Abwa, durante uma viagem de retorno de Medina. Ibn Sa'd relata em 'At-Tabaqat al-Kubra' que ela era conhecida por sua nobreza e piedade. O Profeta (saws) visitou seu túmulo anos depois e chorou, dizendo: 'Visitei o túmulo de minha mãe e pedi permissão ao meu Senhor para pedir perdão por ela, mas não me foi permitido' (Sahih Muslim 976).",
+        "Aminah bint Wahb foi a mãe do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele). Ela faleceu quando ele tinha apenas 6 anos de idade, em Al-Abwa, durante uma viagem de retorno de Medina. Ibn Sa'd relata em 'At-Tabaqat al-Kubra' que ela era conhecida por sua nobreza e piedade. O Profeta (saws) visitou seu túmulo anos depois e chorou, dizendo: 'Visitei o túmulo de minha mãe e pedi permissão ao meu Senhor para pedir perdão por ela, mas não me foi permitido' (Sahih Muslim 976).",
     },
     {
       id: 3,
       question:
-        "Quantos anos tinha o Profeta Muhammad (paz esteja com ele) quando recebeu a primeira revelação?",
+        "Quantos anos tinha o Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) quando recebeu a primeira revelação?",
       options: [
         "A) 30 anos",
         "B) 40 anos",
@@ -898,12 +898,12 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "O Profeta Muhammad (paz esteja com ele) tinha 40 anos quando recebeu a primeira revelação na Caverna de Hira. Aisha (que Allah esteja satisfeito com ela) narrou: 'A primeira coisa que começou para o Mensageiro de Allah foi os sonhos verdadeiros... então o isolamento se tornou querido para ele e ele costumava ir à caverna de Hira onde adorava (Allah) continuamente por vários dias' (Sahih al-Bukhari 3). Este evento ocorreu durante o mês de Ramadã, como Allah diz: 'O mês de Ramadã em que foi revelado o Alcorão' (Alcorão 2:185).",
+        "O Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) tinha 40 anos quando recebeu a primeira revelação na Caverna de Hira. Aisha (que Allah esteja satisfeito com ela) narrou: 'A primeira coisa que começou para o Mensageiro de Allah foi os sonhos verdadeiros... então o isolamento se tornou querido para ele e ele costumava ir à caverna de Hira onde adorava (Allah) continuamente por vários dias' (Sahih al-Bukhari 3). Este evento ocorreu durante o mês de Ramadã, como Allah diz: 'O mês de Ramadã em que foi revelado o Alcorão' (Alcorão 2:185).",
     },
     {
       id: 4,
       question:
-        "Qual foi a primeira palavra revelada ao Profeta Muhammad (paz esteja com ele)?",
+        "Qual foi a primeira palavra revelada ao Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Alhamdulillah",
         "B) Bismillah",
@@ -917,7 +917,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 5,
       question:
-        "Quem foi a primeira esposa do Profeta Muhammad (paz esteja com ele)?",
+        "Quem foi a primeira esposa do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Aisha",
         "B) Hafsa",
@@ -926,14 +926,14 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 2,
       explanation:
-        "Khadija bint Khuwaylid foi a primeira esposa do Profeta Muhammad (paz esteja com ele). Eles se casaram quando ele tinha 25 anos e ela 40 anos. Ela foi a primeira pessoa a acreditar nele e apoiá-lo quando recebeu a revelação. O Profeta (saws) disse sobre ela: 'Ela acreditou em mim quando as pessoas me rejeitaram, ela me apoiou com sua riqueza quando as pessoas me privaram' (Musnad Ahmad). Permaneceram casados por 25 anos até a morte dela, e ele nunca se casou com outra mulher durante a vida de Khadija.",
+        "Khadija bint Khuwaylid foi a primeira esposa do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele). Eles se casaram quando ele tinha 25 anos e ela 40 anos. Ela foi a primeira pessoa a acreditar nele e apoiá-lo quando recebeu a revelação. O Profeta (saws) disse sobre ela: 'Ela acreditou em mim quando as pessoas me rejeitaram, ela me apoiou com sua riqueza quando as pessoas me privaram' (Musnad Ahmad). Permaneceram casados por 25 anos até a morte dela, e ele nunca se casou com outra mulher durante a vida de Khadija.",
     },
 
     // NÍVEL 2 - INTERMEDIÁRIO (Perguntas 6-10)
     {
       id: 6,
       question:
-        "Qual é o nome da migração do Profeta (paz esteja com ele) de Meca para Medina?",
+        "Qual é o nome da migração do Profeta que a paz e bênçãos de Allah estejam sobre ele) de Meca para Medina?",
       options: ["A) Isra", "B) Miraj", "C) Hijrah", "D) Umrah"],
       correctAnswer: 2,
       explanation:
@@ -956,16 +956,16 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 8,
       question:
-        "Quantos filhos o Profeta Muhammad (paz esteja com ele) teve?",
+        "Quantos filhos o Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) teve?",
       options: ["A) 5", "B) 7", "C) 9", "D) 3"],
       correctAnswer: 1,
       explanation:
-        "O Profeta (paz esteja com ele) teve 7 filhos: 3 filhos (Al-Qasim, Abdullah e Ibrahim) e 4 filhas (Zainab, Ruqayyah, Umm Kulthum e Fatimah). Todos de Khadija, exceto Ibrahim que foi de Maria, a copta. Anas ibn Malik narrou sobre Ibrahim: 'Quando Ibrahim, o filho do Profeta, morreu, o Mensageiro de Allah disse: Há uma ama de leite para ele no Paraíso' (Sahih al-Bukhari 1383). Apenas Fatimah sobreviveu após sua morte.",
+        "O Profeta que a paz e bênçãos de Allah estejam sobre ele) teve 7 filhos: 3 filhos (Al-Qasim, Abdullah e Ibrahim) e 4 filhas (Zainab, Ruqayyah, Umm Kulthum e Fatimah). Todos de Khadija, exceto Ibrahim que foi de Maria, a copta. Anas ibn Malik narrou sobre Ibrahim: 'Quando Ibrahim, o filho do Profeta, morreu, o Mensageiro de Allah disse: Há uma ama de leite para ele no Paraíso' (Sahih al-Bukhari 1383). Apenas Fatimah sobreviveu após sua morte.",
     },
     {
       id: 9,
       question:
-        "Qual evento milagroso aconteceu com o Profeta (paz esteja com ele) em uma única noite, viajando de Meca a Jerusalém e depois ao céu?",
+        "Qual evento milagroso aconteceu com o Profeta que a paz e bênçãos de Allah estejam sobre ele) em uma única noite, viajando de Meca a Jerusalém e depois ao céu?",
       options: [
         "A) Hijrah",
         "B) Isra e Miraj",
@@ -979,7 +979,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 10,
       question:
-        "Qual era o apelido (Kunyah) do Profeta Muhammad (paz esteja com ele)?",
+        "Qual era o apelido (Kunyah) do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Abu Bakr",
         "B) Abu Al-Qasim",
@@ -995,7 +995,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 11,
       question:
-        "Quantos anos durou a missão profética do Profeta Muhammad (paz esteja com ele)?",
+        "Quantos anos durou a missão profética do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) 20 anos",
         "B) 23 anos",
@@ -1009,7 +1009,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 12,
       question:
-        "Qual tratado de paz o Profeta (paz esteja com ele) assinou com os coraixitas de Meca?",
+        "Qual tratado de paz o Profeta que a paz e bênçãos de Allah estejam sobre ele) assinou com os coraixitas de Meca?",
       options: [
         "A) Tratado de Medina",
         "B) Tratado de Hudaybiyyah",
@@ -1037,7 +1037,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 14,
       question:
-        "Qual foi o último sermão público do Profeta (paz esteja com ele)?",
+        "Qual foi o último sermão público do Profeta que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Sermão de Arafah",
         "B) Sermão da Despedida",
@@ -1051,7 +1051,7 @@ const questionsByCategory: Record<string, Question[]> = {
     {
       id: 15,
       question:
-        "Em que mês e ano (islâmico) o Profeta Muhammad (paz esteja com ele) faleceu?",
+        "Em que mês e ano (islâmico) o Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) faleceu?",
       options: [
         "A) Ramadã, 11 AH",
         "B) Rabi al-Awwal, 11 AH",
@@ -1060,7 +1060,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "O Profeta (paz esteja com ele) faleceu em 12 de Rabi al-Awwal, 11 AH (8 de junho de 632 d.C.) aos 63 anos de idade. Anas ibn Malik narrou: 'Quando o Mensageiro de Allah morreu, Medina nunca foi tão iluminada como no dia em que ele entrou nela, e nunca ficou tão escura como no dia em que ele morreu' (Sunan Ibn Majah 1631). Ele foi enterrado em seu quarto em Medina, onde hoje está a Mesquita do Profeta. Aisha narrou seus últimos momentos em Sahih al-Bukhari (4448).",
+        "O Profeta que a paz e bênçãos de Allah estejam sobre ele) faleceu em 12 de Rabi al-Awwal, 11 AH (8 de junho de 632 d.C.) aos 63 anos de idade. Anas ibn Malik narrou: 'Quando o Mensageiro de Allah morreu, Medina nunca foi tão iluminada como no dia em que ele entrou nela, e nunca ficou tão escura como no dia em que ele morreu' (Sunan Ibn Majah 1631). Ele foi enterrado em seu quarto em Medina, onde hoje está a Mesquita do Profeta. Aisha narrou seus últimos momentos em Sahih al-Bukhari (4448).",
     },
   ],
   mulheres: [
@@ -1635,7 +1635,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 0,
       explanation:
-        "Ihsan é a excelência em todas as ações. O Profeta (paz esteja com ele) definiu Ihsan quando o Anjo Jibril perguntou: 'O que é Ihsan?' Ele respondeu: 'É adorar a Allah como se O estivesse vendo, e embora não O vejas, saibas que Ele te vê' (Sahih Muslim 8). Este é o mais alto nível de consciência espiritual, onde cada ação é feita com perfeição. Allah diz: 'Na verdade, Allah ordena a justiça e Ihsan (excelência)' (Alcorão 16:90).",
+        "Ihsan é a excelência em todas as ações. O Profeta que a paz e bênçãos de Allah estejam sobre ele) definiu Ihsan quando o Anjo Jibril perguntou: 'O que é Ihsan?' Ele respondeu: 'É adorar a Allah como se O estivesse vendo, e embora não O vejas, saibas que Ele te vê' (Sahih Muslim 8). Este é o mais alto nível de consciência espiritual, onde cada ação é feita com perfeição. Allah diz: 'Na verdade, Allah ordena a justiça e Ihsan (excelência)' (Alcorão 16:90).",
     },
     {
       id: 12,
@@ -1649,7 +1649,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "O controle da raiva é uma virtude suprema no Islam. O Profeta (paz esteja com ele) disse: 'O forte não é aquele que vence os outros na luta, mas o forte é aquele que controla a si mesmo quando está com raiva' (Sahih al-Bukhari 6114). Em outra ocasião, um homem pediu conselho repetidamente e o Profeta continuou dizendo: 'Não fique com raiva' (Sahih al-Bukhari 6116). Allah elogia os crentes: 'E aqueles que reprimem a raiva e perdoam as pessoas - Allah ama os que fazem o bem' (Alcorão 3:134).",
+        "O controle da raiva é uma virtude suprema no Islam. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'O forte não é aquele que vence os outros na luta, mas o forte é aquele que controla a si mesmo quando está com raiva' (Sahih al-Bukhari 6114). Em outra ocasião, um homem pediu conselho repetidamente e o Profeta continuou dizendo: 'Não fique com raiva' (Sahih al-Bukhari 6116). Allah elogia os crentes: 'E aqueles que reprimem a raiva e perdoam as pessoas - Allah ama os que fazem o bem' (Alcorão 3:134).",
     },
     {
       id: 13,
@@ -1663,7 +1663,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Ghiba (fofoca/calúnia) é um dos pecados graves no Islam. O Profeta (paz esteja com ele) explicou: 'Vocês sabem o que é Ghiba?' Disseram: 'Allah e Seu Mensageiro sabem melhor.' Ele disse: 'É mencionar sobre seu irmão o que ele não gosta.' Foi perguntado: 'E se o que eu disse é verdade?' Ele respondeu: 'Se é verdade, você cometeu Ghiba, e se for mentira, você o caluniou' (Sahih Muslim 2589). Allah compara a Ghiba a comer a carne do irmão morto: 'Gostaria algum de vós comer a carne do seu irmão morto? Certamente o detestaríeis!' (Alcorão 49:12).",
+        "Ghiba (fofoca/calúnia) é um dos pecados graves no Islam. O Profeta que a paz e bênçãos de Allah estejam sobre ele) explicou: 'Vocês sabem o que é Ghiba?' Disseram: 'Allah e Seu Mensageiro sabem melhor.' Ele disse: 'É mencionar sobre seu irmão o que ele não gosta.' Foi perguntado: 'E se o que eu disse é verdade?' Ele respondeu: 'Se é verdade, você cometeu Ghiba, e se for mentira, você o caluniou' (Sahih Muslim 2589). Allah compara a Ghiba a comer a carne do irmão morto: 'Gostaria algum de vós comer a carne do seu irmão morto? Certamente o detestaríeis!' (Alcorão 49:12).",
     },
     {
       id: 14,
@@ -1677,7 +1677,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 2,
       explanation:
-        "A arrogância (Kibr) é um dos pecados mais graves, pois foi o pecado de Iblis (Satanás). O Profeta (paz esteja com ele) disse: 'Não entrará no Paraíso aquele que tiver no coração o peso de um átomo de arrogância' (Sahih Muslim 91). Ele definiu arrogância como: 'Rejeitar a verdade e desprezar as pessoas.' Em contraste, Allah diz: 'E não vires o teu rosto das pessoas por arrogância, nem andes pela terra com insolência. Allah não ama nenhum arrogante presunçoso' (Alcorão 31:18). O Profeta era o mais humilde: 'Certamente és de caráter magnífico' (Alcorão 68:4).",
+        "A arrogância (Kibr) é um dos pecados mais graves, pois foi o pecado de Iblis (Satanás). O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Não entrará no Paraíso aquele que tiver no coração o peso de um átomo de arrogância' (Sahih Muslim 91). Ele definiu arrogância como: 'Rejeitar a verdade e desprezar as pessoas.' Em contraste, Allah diz: 'E não vires o teu rosto das pessoas por arrogância, nem andes pela terra com insolência. Allah não ama nenhum arrogante presunçoso' (Alcorão 31:18). O Profeta era o mais humilde: 'Certamente és de caráter magnífico' (Alcorão 68:4).",
     },
     {
       id: 15,
@@ -1691,7 +1691,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Sadaqah Jariyah é uma caridade cujas recompensas continuam fluindo mesmo após a morte. O Profeta (paz esteja com ele) disse: 'Quando o ser humano morre, suas ações cessam, exceto três: caridade contínua (Sadaqah Jariyah), conhecimento do qual as pessoas se beneficiam, ou um filho piedoso que reza por ele' (Sahih Muslim 1631). Exemplos incluem: construir mesquitas, poços de água, plantar árvores, ensinar conhecimento útil, etc. Allah diz: 'O exemplo daqueles que gastam sua riqueza no caminho de Allah é como uma semente que produz sete espigas, em cada espiga cem grãos' (Alcorão 2:261).",
+        "Sadaqah Jariyah é uma caridade cujas recompensas continuam fluindo mesmo após a morte. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Quando o ser humano morre, suas ações cessam, exceto três: caridade contínua (Sadaqah Jariyah), conhecimento do qual as pessoas se beneficiam, ou um filho piedoso que reza por ele' (Sahih Muslim 1631). Exemplos incluem: construir mesquitas, poços de água, plantar árvores, ensinar conhecimento útil, etc. Allah diz: 'O exemplo daqueles que gastam sua riqueza no caminho de Allah é como uma semente que produz sete espigas, em cada espiga cem grãos' (Alcorão 2:261).",
     },
   ],
   alcorao: [
@@ -1703,7 +1703,7 @@ const questionsByCategory: Record<string, Question[]> = {
       options: ["A) 100", "B) 114", "C) 120", "D) 99"],
       correctAnswer: 1,
       explanation:
-        "O Alcorão Sagrado contém 114 Surahs (capítulos), começando com Al-Fatiha e terminando com An-Nas. O Profeta Muhammad (paz esteja com ele) disse: 'Aquele que recita uma letra do Livro de Allah terá uma boa ação, e cada boa ação é multiplicada por dez' (Tirmidhi 2910). As Surahs variam em tamanho, desde Al-Kawthar com apenas 3 versos até Al-Baqarah com 286 versos.",
+        "O Alcorão Sagrado contém 114 Surahs (capítulos), começando com Al-Fatiha e terminando com An-Nas. O Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) disse: 'Aquele que recita uma letra do Livro de Allah terá uma boa ação, e cada boa ação é multiplicada por dez' (Tirmidhi 2910). As Surahs variam em tamanho, desde Al-Kawthar com apenas 3 versos até Al-Baqarah com 286 versos.",
     },
     {
       id: 2,
@@ -1717,7 +1717,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 2,
       explanation:
-        "Al-Fatiha (A Abertura) é a primeira Surah do Alcorão. O Profeta (paz esteja com ele) disse: 'A Surah Al-Fatiha é a maior Surah do Alcorão' (Sahih al-Bukhari 4474). Ela contém 7 versos e é recitada em cada unidade (rakat) da oração. Allah diz sobre ela: 'E certamente te demos sete dos versículos repetidos e o grande Alcorão' (Alcorão 15:87), referindo-se a Al-Fatiha.",
+        "Al-Fatiha (A Abertura) é a primeira Surah do Alcorão. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'A Surah Al-Fatiha é a maior Surah do Alcorão' (Sahih al-Bukhari 4474). Ela contém 7 versos e é recitada em cada unidade (rakat) da oração. Allah diz sobre ela: 'E certamente te demos sete dos versículos repetidos e o grande Alcorão' (Alcorão 15:87), referindo-se a Al-Fatiha.",
     },
     {
       id: 3,
@@ -1731,12 +1731,12 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 2,
       explanation:
-        "O Alcorão foi revelado em árabe puro. Allah diz: 'Na verdade, fizemos dele um Alcorão em árabe para que possam entender' (Alcorão 43:3). Também diz: 'E este é um Livro que fizemos descer, abençoado, confirmando o que estava antes dele' (Alcorão 6:92). O árabe foi escolhido porque era a língua do Profeta Muhammad (paz esteja com ele) e de seu povo, permitindo comunicação clara da mensagem divina.",
+        "O Alcorão foi revelado em árabe puro. Allah diz: 'Na verdade, fizemos dele um Alcorão em árabe para que possam entender' (Alcorão 43:3). Também diz: 'E este é um Livro que fizemos descer, abençoado, confirmando o que estava antes dele' (Alcorão 6:92). O árabe foi escolhido porque era a língua do Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele) e de seu povo, permitindo comunicação clara da mensagem divina.",
     },
     {
       id: 4,
       question:
-        "Qual anjo trouxe a revelação do Alcorão ao Profeta Muhammad (paz esteja com ele)?",
+        "Qual anjo trouxe a revelação do Alcorão ao Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Mikail",
         "B) Israfil",
@@ -1773,7 +1773,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Al-Baqarah (A Vaca) é a Surah mais longa com 286 versos. O Profeta (paz esteja com ele) disse: 'Não transformem suas casas em cemitérios. Satanás foge da casa onde a Surah Al-Baqarah é recitada' (Sahih Muslim 780). Esta Surah contém Ayat al-Kursi (verso do Trono), que o Profeta chamou de maior verso do Alcorão. Foi revelada em Medina e aborda legislação, fé e histórias dos profetas anteriores.",
+        "Al-Baqarah (A Vaca) é a Surah mais longa com 286 versos. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Não transformem suas casas em cemitérios. Satanás foge da casa onde a Surah Al-Baqarah é recitada' (Sahih Muslim 780). Esta Surah contém Ayat al-Kursi (verso do Trono), que o Profeta chamou de maior verso do Alcorão. Foi revelada em Medina e aborda legislação, fé e histórias dos profetas anteriores.",
     },
     {
       id: 7,
@@ -1787,7 +1787,7 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Ayat al-Kursi é Al-Baqarah 2:255. O Profeta (paz esteja com ele) perguntou a Ubayy ibn Ka'b: 'Qual verso no Livro de Allah é o maior?' Ele respondeu: 'Allah e Seu Mensageiro sabem melhor.' Quando repetiu, Ubayy disse: 'Ayat al-Kursi.' O Profeta bateu em seu peito e disse: 'Que o conhecimento seja agradável para você, Ó Abu Mundhir!' (Sahih Muslim 810). Este verso descreve a grandeza e soberania de Allah.",
+        "Ayat al-Kursi é Al-Baqarah 2:255. O Profeta que a paz e bênçãos de Allah estejam sobre ele) perguntou a Ubayy ibn Ka'b: 'Qual verso no Livro de Allah é o maior?' Ele respondeu: 'Allah e Seu Mensageiro sabem melhor.' Quando repetiu, Ubayy disse: 'Ayat al-Kursi.' O Profeta bateu em seu peito e disse: 'Que o conhecimento seja agradável para você, Ó Abu Mundhir!' (Sahih Muslim 810). Este verso descreve a grandeza e soberania de Allah.",
     },
     {
       id: 8,
@@ -1809,12 +1809,12 @@ const questionsByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       explanation:
-        "Surah Ya-Sin (capítulo 36) é chamada de 'coração do Alcorão'. O Profeta (paz esteja com ele) disse: 'Tudo tem um coração, e o coração do Alcorão é Ya-Sin. Quem recitar Ya-Sin, Allah escreverá para ele a recompensa de recitar o Alcorão dez vezes' (Tirmidhi 2887). Esta Surah aborda temas centrais do Islam: profecia, ressurreição, unicidade de Allah e sinais da criação. Foi revelada em Meca.",
+        "Surah Ya-Sin (capítulo 36) é chamada de 'coração do Alcorão'. O Profeta que a paz e bênçãos de Allah estejam sobre ele) disse: 'Tudo tem um coração, e o coração do Alcorão é Ya-Sin. Quem recitar Ya-Sin, Allah escreverá para ele a recompensa de recitar o Alcorão dez vezes' (Tirmidhi 2887). Esta Surah aborda temas centrais do Islam: profecia, ressurreição, unicidade de Allah e sinais da criação. Foi revelada em Meca.",
     },
     {
       id: 10,
       question:
-        "Qual foi a última Surah completa revelada ao Profeta Muhammad (paz esteja com ele)?",
+        "Qual foi a última Surah completa revelada ao Profeta Muhammad que a paz e bênçãos de Allah estejam sobre ele)?",
       options: [
         "A) Al-Fatiha",
         "B) An-Nasr",

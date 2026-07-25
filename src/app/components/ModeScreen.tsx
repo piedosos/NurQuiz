@@ -73,12 +73,12 @@ export function ModeScreen({ onSelectMode, onBack }: ModeScreenProps) {
                   Desafio com Tempo
                 </h3>
                 <p className="text-orange-700 font-medium mb-4">
-                  Teste sua velocidade! 10 segundos por pergunta.
+                  Teste sua velocidade! 30 segundos por pergunta.
                 </p>
                 <div className="space-y-2 text-sm text-orange-600">
                   <div className="flex items-center justify-center gap-2">
                     <Zap className="w-4 h-4" />
-                    <span>10 segundos por pergunta</span>
+                    <span>30 segundos por pergunta</span>
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="w-4 h-4" />
