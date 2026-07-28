@@ -75,12 +75,26 @@ create policy "Utilizador regista as suas tentativas"
 -- ============================================================
 create or replace function public.handle_new_user()
 returns trigger as $$
+declare
+  base_username text;
+  final_username text;
 begin
+  base_username := coalesce(
+    nullif(trim(new.raw_user_meta_data->>'username'), ''),
+    nullif(trim(new.raw_user_meta_data->>'full_name'), ''),
+    nullif(trim(new.raw_user_meta_data->>'name'), ''),
+    split_part(new.email, '@', 1)
+  );
+  final_username := base_username;
+
+  -- Se o nome já existir (ex: dois utilizadores com o mesmo nome no
+  -- Google), acrescenta um sufixo curto e único para evitar conflito
+  if exists (select 1 from public.profiles where username = final_username) then
+    final_username := base_username || '_' || substr(new.id::text, 1, 4);
+  end if;
+
   insert into public.profiles (id, username)
-  values (
-    new.id,
-    coalesce(new.raw_user_meta_data->>'username', split_part(new.email, '@', 1))
-  )
+  values (new.id, final_username)
   on conflict (id) do nothing;
   return new;
 end;
