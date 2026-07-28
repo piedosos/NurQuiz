@@ -14,7 +14,7 @@ export function StartScreen({ onStart, onShowLeaderboard, onLogout, username }: 
       <div className="max-w-md w-full text-center space-y-8">
         {username && (
           <div className="flex items-center justify-between text-sm text-emerald-700">
-            <span>Olá, {username} 👋</span>
+            <span>Assalamu Alaikum, {username} 👋</span>
             {onLogout && (
               <button onClick={onLogout} className="flex items-center gap-1 hover:underline">
                 <LogOut className="w-4 h-4" /> Sair
