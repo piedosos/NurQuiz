@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Nur Quiz</string>
+    <string name="title_activity_main">Nur Quiz</string>
+    <string name="package_name">com.piedosos.nurquiz</string>
+    <string name="custom_url_scheme">com.piedosos.nurquiz</string>
+</resources>
